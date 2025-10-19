@@ -17,24 +17,38 @@
   </head>
 
   <body>
-    <header class="header">
-      <img src="images/Фото (1).png" alt="" />
+    <div id="top"></div>
+    <script>
+      // Зберігає позицію при виході
+      window.addEventListener("beforeunload", () => {
+        localStorage.setItem("scrollPos", window.scrollY);
+      });
 
-      <h1>Привіт, мене звати Марія ♡</h1>
-    </header>
+      // Відновлює позицію при перезавантаженні
+      window.addEventListener("load", () => {
+        const scrollPos = localStorage.getItem("scrollPos");
+        if (scrollPos) {
+          window.scrollTo(0, scrollPos);
+        }
+      });
+    </script>
 
     <nav class="menu">
-      <b class="menu">
-        <a href="#about" class="menu-item">Про мене</a>
+      <img class="menu-img" src="images/0.gif" alt="" />
+      <div class="menu-items">
+        <a href="#top" class="menu-item menu-item-special">Про мене</a>
         <a href="#hobby" class="menu-item">Мої захоплення</a>
         <a href="#doing" class="menu-item">Що вмію</a>
         <a href="#works" class="menu-item">Портфоліо</a>
         <a href="#contacts" class="menu-item">Контакти</a>
-      </b>
+      </div>
     </nav>
 
-    <div class="wrapper">
-      <div class="container">
+    <header class="header">
+      <img src="images/Фото (1).png" alt="" />
+      <div class="section1">
+        <h1>Привіт, мене звати Марія ♡</h1>
+
         <h2 id="about">Про мене ᴗ̈</h2>
         <p>
           Мені 18 років, навчаюсь в
@@ -43,104 +57,96 @@
               >коледжі імені І.Труша</a
             ></b
           >
-          на <b>4 курсі </b>на відділі <b>"графічний дизайн".</b> Люблю
-          мистецтво у всіх його проявах і завжди знаходжу час для творчості.
-          <i>Живу у Львові, в Сихівському районі.</i>
-          Ще дуже люблю тваринок, особливо котиків ฅ/ᐠ. .̫ .ᐟ\ฅ Маю молодших
-          брата і сестру.
+          на 4 курсі на відділі "графічний дизайн". Люблю мистецтво у всіх його
+          проявах і завжди знаходжу час для творчості. Живу у Львові, в
+          Сихівському районі. Ще дуже люблю тваринок, особливо котиків
+          <b>ฅ/ᐠ. .̫ .ᐟ\ฅ</b> Маю двох котів, собаку, черепаху та двох морських
+          свинок :3
         </p>
       </div>
+    </header>
 
-      <div class="flex-box">
-        <!-- <img
-          class="image2"
-          src="/images/6c9d78ff0aef15b00a358ab718ed3aca.gif"
-        />
-        <img
-          class="image2"
-          src="/images/6c9d78ff0aef15b00a358ab718ed3aca.gif"
-        />
-        <img
-          class="image2"
-          src="/images/6c9d78ff0aef15b00a358ab718ed3aca.gif"
-        /> -->
-      </div>
-
-      <div class="flex-box1">
-        <div class="container">
-          <h2 id="hobby">Мої захоплення</h2>
-          <ul>
-            <li>Малювання: цифрове і традиційне</li>
-            <li>В'язання</li>
-            <li>Музика</li>
-            <li>Цілодобовий перегляд ютубу</li>
-          </ul>
+    <main>
+      <section class="container">
+        <div class="flex-box1">
+          <div class="section">
+            <h2 id="hobby">Мої захоплення</h2>
+            <ul>
+              <li>Малювання: цифрове і традиційне</li>
+              <li>В'язання гачком</li>
+              <li>Музика</li>
+              <li>Цілодобовий перегляд YouTube</li>
+            </ul>
+          </div>
+          <img src="images/_ (3).jpeg" alt="" />
         </div>
-        <img src="images/11.jpeg" />
-      </div>
-
-      <div class="flex-box1">
-        <div class="container">
-          <h2 id="doing">Що вмію</h2>
-          <ul>
-            <li>Нічого не робити</li>
-            <li>Їсти</li>
-            <li>Спати</li>
-            <li>Грати на піаніно (принаймні колись)</li>
-            <li>Малювати в фотошопі і на папері</li>
-            <li>В'язати</li>
-          </ul>
+        <div class="flex-box1">
+          <div class="section">
+            <h2 id="doing">Що вмію</h2>
+            <ul>
+              <li>Нічого не робити</li>
+              <li>Їсти</li>
+              <li>Спати</li>
+              <li>Готувати</li>
+              <li>Грати на піаніно (принаймні колись)</li>
+              <li>Малювати в Photoshop і на папері</li>
+              <li>В'язати гачком</li>
+            </ul>
+          </div>
+          <img src="images/100.jpeg" alt="" />
         </div>
-        <img src="/images/100.png" />
-      </div>
-      <div class="flex-box1">
-        <div class="container">
+
+        <div class="flex-box1">
+          <img src="images/_ (1).jpeg" alt="" />
+          <img src="images/_ (2).jpeg" alt="" />
+          <img src="images/assim de saúde.jpeg" alt="" />
+          <img src="images/[550] avatar 𓂃꙳⋆.jpeg" alt="" />
+        </div>
+
+        <div class="section">
           <h2 id="works">Портфоліо</h2>
           <ol>
-            <i>
-              <li>Паттерн морепродуктів 1</li>
-              <li>Паттерн морепродуктів 2</li>
-              <li>Мерч для НАСВ</li>
-              <li>Проект упакування з використанням акваграфій</li>
-              <li>Редизайн упаковки вівсяних пластівців "Чемпіон"</li>
-              <li>Редизайн упаковки чаю</li>
-              <li>Композиція "Праска"</li>
-              <li>Етикетка для енергетичного напою</li>
-            </i>
+            <li>Паттерн морепродуктів 1</li>
+            <li>Паттерн морепродуктів 2</li>
+            <li>Мерч для НАСВ</li>
+            <li>Проєкт упаковки з використанням акваграфій</li>
+            <li>Редизайн упаковки вівсяних пластівців "Чемпіон"</li>
+            <li>Редизайн упаковки чаю</li>
+            <li>Композиція "Праска"</li>
+            <li>Етикетка для енергетичного напою</li>
           </ol>
         </div>
-        <img src="images/22.jpeg" alt="" />
-      </div>
-    </div>
+      </section>
 
-    <div class="flex-box2">
-      <img src="images/pic1.png" />
-      <img src="images/pic7.png" />
-      <img src="images/pic6.png" />
-      <img src="images/pic8.png" />
-      <img src="images/pic4.png" />
-      <img src="images/pic5.png" />
-      <img src="images/pic2.png" />
-      <img src="images/pic3.png" />
-    </div>
+      <section class="flex-box2">
+        <img src="images/pic1.png" alt="" />
+        <img src="images/pic7.png" alt="" />
+        <img src="images/pic6.png" alt="" />
+        <img src="images/pic8.png" alt="" />
+        <img src="images/pic5.png" alt="" />
+        <img src="images/pic4.png" alt="" />
+        <img src="images/pic2.png" alt="" />
+        <img src="images/pic3.png" alt="" />
+      </section>
 
-    <div class="wrapper">
-      <div class="flex-box1">
-        <div class="container">
-          <h2 id="contacts">Контакти</h2>
-          <p class="center">
-            <strong>Email:</strong> cat.maria100at@gmail.com <br />
-            <strong>Телефон:</strong> 0969418040 <br />
-            <a href="https://www.instagram.com/">Instagram</a> <br />
-            <a href="https://t.me/htos_to_tochno_1">Telegram</a> <br />
-            <a
-              href="https://www.facebook.com/maria.atamanuk.327991?locale=uk_UA"
-              >Facebook</a
-            >
-          </p>
+      <section class="container">
+        <div class="flex-box3">
+          <div class="section">
+            <h2 id="contacts">Контакти</h2>
+            <p>
+              <strong>Email:</strong> cat.maria100at@gmail.com <br />
+              <strong>Телефон:</strong> 0969418040 <br />
+              <a href="https://www.instagram.com/">Instagram</a> <br />
+              <a href="https://t.me/htos_to_tochno_1">Telegram</a> <br />
+              <a
+                href="https://www.facebook.com/maria.atamanuk.327991?locale=uk_UA"
+                >Facebook</a
+              >
+            </p>
+          </div>
+          <img src="images/0.gif" alt="" />
         </div>
-        <img src="images/cat.gif" alt="" />
-      </div>
-    </div>
+      </section>
+    </main>
   </body>
 </html>
