@@ -159,22 +159,19 @@ p a {
 
 .flex-box2 {
   background: rgb(16, 14, 14);
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 25px;
   padding: 30px 10px;
-  flex-wrap: wrap; /* щоб на малих екранах не ламалось */
+  flex-wrap: wrap;
 }
 
 .flex-box2 img {
-  height: 200px; /* усі зображення однакової висоти */
-  width: auto; /* ширина підлаштовується автоматично */
+  max-height: 30vh;
   border-radius: 20px;
-  object-fit: cover; /* зберігає пропорції без спотворення */
+  object-fit: cover;
   display: block;
-  flex-shrink: 0; /* не дозволяє стискати картинки */
 }
 .flex-box3 {
   display: flex;
