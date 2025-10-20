@@ -70,7 +70,7 @@ body {
 }
 
 .header img {
-  max-width: 18vw;
+  max-width: 15vw;
   min-width: 150px;
   height: auto;
   margin-bottom: 1.5vh;
@@ -102,15 +102,17 @@ body {
 .container {
   background: rgb(245, 216, 245);
   border-radius: 2vw;
-  max-width: 65vw;
+  max-width: 67vw;
+  min-width: 64vh;
   margin: 5vh auto;
   padding: 4vh 4vw;
 }
+
 .flex-box1 {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 30px;
+  gap: 2vw;
   padding: 10px;
   margin-bottom: 2.5vw;
 }
@@ -119,7 +121,7 @@ body {
   height: auto;
   width: 100%;
   max-width: 14vw;
-  min-width: 10vw;
+  min-width: 12vh;
   border-radius: 3vw;
 }
 
