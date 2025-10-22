@@ -6,12 +6,18 @@ html {
     rgba(240, 105, 255, 1) 31%,
     rgb(255, 185, 208) 88%
   );
+  background: rgb(245, 216, 245);
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+.section3 {
+  background-color: rgba(180, 77, 227, 1);
+  height: 20px;
+  margin-bottom: 15px;
 }
 
 body {
@@ -35,7 +41,7 @@ body {
 
 .menu-img {
   max-width: 6vw;
-  min-width: 50px;
+  min-width: 40px;
   height: auto;
 }
 
@@ -70,7 +76,7 @@ body {
 }
 
 .header img {
-  max-width: 15vw;
+  max-width: 17vw;
   min-width: 150px;
   height: auto;
   margin-bottom: 1.5vh;
@@ -82,7 +88,7 @@ body {
 
 .section1 h1 {
   color: rgb(245, 216, 245);
-  font-size: clamp(1.4rem, 2.2vw, 4rem);
+  font-size: clamp(1.4rem, 2.5vw, 4rem);
   margin-bottom: 1vh;
 }
 
@@ -91,18 +97,10 @@ body {
   line-height: 1.4;
 }
 
-/* .container {
-  background: rgb(245, 216, 245);
-  border-radius: 40px;
-  max-width: 65vw;
-
-  margin: 30px auto;
-  padding: 2vw 4vw;
-} */
 .container {
   background: rgb(245, 216, 245);
   border-radius: 2vw;
-  max-width: 67vw;
+  width: 67vw;
   min-width: 64vh;
   margin: 5vh auto;
   padding: 4vh 4vw;
@@ -119,7 +117,6 @@ body {
 
 .flex-box1 img {
   height: auto;
-  width: 100%;
   max-width: 14vw;
   min-width: 12vh;
   border-radius: 3vw;
@@ -131,7 +128,7 @@ body {
 
 h2 {
   scroll-margin-top: 6vw;
-  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-size: clamp(1rem, 2vw, 1.8rem);
   color: rgba(180, 77, 227, 1);
   font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
   margin-bottom: 1rem;
@@ -139,13 +136,13 @@ h2 {
 
 ol,
 ul {
-  font-size: clamp(0.8rem, 1.5vw, 1.1rem);
+  font-size: clamp(0.8rem, 1.6vw, 1.1rem);
   line-height: 1.5;
   padding-left: 1.1rem;
 }
 
 p {
-  font-size: clamp(0.8rem, 1.5vw, 1.1rem);
+  font-size: clamp(0.8rem, 1.6vw, 1.1rem);
   color: #000;
   line-height: 1.5;
 }
@@ -173,17 +170,24 @@ p a {
   object-fit: cover;
   display: block;
 }
-.flex-box3 {
+
+.section2 {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  gap: 30px;
-  padding: 10px;
+  text-align: center;
 }
 
-.flex-box3 img {
-  height: auto;
-  width: 100%;
-  max-width: 10vw;
-  min-width: 10vh;
+.flex-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8vw;
+  padding: 10px;
+  margin-bottom: 2.2vw;
+}
+.flex-box img {
+  max-width: 5vw;
+  min-width: 4vh;
+  border-radius: 3vw;
 }
