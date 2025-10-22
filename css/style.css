@@ -1,11 +1,5 @@
 html {
   scroll-behavior: smooth;
-  background: linear-gradient(
-    90deg,
-    rgba(189, 89, 255, 1) 0%,
-    rgba(240, 105, 255, 1) 31%,
-    rgb(255, 185, 208) 88%
-  );
   background: rgb(245, 216, 245);
 }
 
