@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+  
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Моя веб сторінка</title>
@@ -14,49 +15,42 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <link rel="shortcut icon" href="./images/102.png" type="image/x-icon" />
+
+    
   </head>
 
   <body>
-  
-    <script>
-      // Зберігає позицію при виході
-      window.addEventListener("beforeunload", () => {
-        localStorage.setItem("scrollPos", window.scrollY);
-      });
-
-      // Відновлює позицію при перезавантаженні
-      window.addEventListener("load", () => {
-        const scrollPos = localStorage.getItem("scrollPos");
-        if (scrollPos) {
-          window.scrollTo(0, scrollPos);
-        }
-      });
-    </script>
-
     <nav class="menu">
       <img class="menu-img" src="images/0.gif" alt="" />
       <div class="menu-items">
-        <a href="#top" class="menu-item menu-item-special">Про мене</a>
-        <a href="#hobby" class="menu-item">Мої захоплення</a>
-        <a href="#doing" class="menu-item">Що вмію</a>
+        <a href="#about" class="menu-item menu-item-special">Про мене</a>
+        <a href="#hobby" class="menu-item">Мої хобі</a>
         <a href="#works" class="menu-item">Портфоліо</a>
+        <a href="#programs" class="menu-item">Програмки</a>
         <a href="#contacts" class="menu-item">Контакти</a>
       </div>
     </nav>
 
-    <header class="header">
-      <img src="images/Фото (1).png" alt="" />
-      <div class="section1">
-        <h1>Привіт, мене звати Марія ♡</h1>
 
-        <h2 id="about">Про мене ᴗ̈</h2>
+    <header class="header">
+  <img class="header-img-special" src="images/text header.png" alt="">
+  <img class="header-img-main" src="images/header1.png" alt="">
+</header>
+
+
+
+
+
+
+<section class="container">     
+      <div class="flex-box1">
+      <img src="images/3img.jpeg" alt="" />
+     <div class="section">
+     <h1 id="about">ПРО МЕНЕ ᴗ̈</h1>
         <p>
           Мені 18 років, навчаюсь в
-          <b
-            ><a href="https://www.artcollege.lviv.ua/"
-              >коледжі імені І.Труша</a
-            ></b
-          >
+          <b><a href="https://www.artcollege.lviv.ua/"
+              >коледжі імені І.Труша</a></b>
           на 4 курсі на відділі "графічний дизайн". Люблю мистецтво у всіх його
           проявах і завжди знаходжу час для творчості. Живу у Львові, в
           Сихівському районі. Ще дуже люблю тваринок, особливо котиків
@@ -64,45 +58,38 @@
           свинок :3
         </p>
       </div>
-      
-    </header>
-
-
-
-
-
-
-
-    <section class="container">
-
-      <div class="flex-box1">
+ 
+</div>
+         <div class="flex-box1">
         
         <div class="section">
-          <h2 id="hobby">Мої захоплення</h2>
+          <h1 id="hobby">МОЇ ХОБІ</h2>
           <ul>
             <li>Малювання: цифрове і традиційне</li>
             <li>В'язання гачком</li>
             <li>Музика</li>
             <li>Цілодобовий перегляд YouTube</li>
           </ul>
+
+      
         </div>
-        <img src="images/3img.jpeg" alt="" />
+        <img src="images/100.jpeg" alt="">
       </div>
-      <div class="flex-box1">
-        <div class="section">
-          <h2 id="doing">Що вмію</h2>
-          <ul>
-            <li>Нічого не робити</li>
-            <li>Їсти</li>
-            <li>Спати</li>
-            <li>Готувати</li>
-            <li>Грати на піаніно (принаймні колись)</li>
-            <li>Малювати в Photoshop і на папері</li>
-            <li>В'язати гачком</li>
-          </ul>
-        </div>
-        <img src="images/100.jpeg" alt="" />
-      </div>
+  
+   
+
+ <div class="section2">
+          <h1 id="contacts">ПРОГРАМКИ</h1>
+          <div class="flex-box"> 
+           <img  src="images/5968522.png" alt=""></a> 
+             <img  src="images/iconibis.png" alt=""></a> 
+           <img src="images/psd.png" alt=""> </a>
+            </div>
+
+
+
+
+
 
       <div class="flex-box1">
         <img src="images/a.jpg" alt="" />
@@ -113,23 +100,24 @@
 
 
 
-
-      <div class="section">
-        <h2 id="works">Портфоліо</h2>
-        <ol>
-          <li>Паттерн морепродуктів 1</li>
-          <li>Паттерн морепродуктів 2</li>
-          <li>Мерч для НАСВ</li>
-          <li>Проєкт упаковки з використанням акваграфій</li>
-          <li>Редизайн упаковки чаю</li>
-          <li>Редизайн упаковки вівсяних пластівців "Чемпіон"</li>
-          <li>Композиція "Праска"</li>
-          <li>Етикетка для енергетичного напою</li>
-        </ol>
+      
+         <div class="section2">
+        <h1 id="works">ПОРТФОЛІО</h2>
       </div>
+  
     </section>
 
-    <section class="flex-box2">
+
+
+
+   
+
+
+
+
+ 
+
+    <div class="flex-box2">
       <img src="images/pic1.png" alt="" />
       <img src="images/pic7.png" alt="" />
       <img src="images/pic6.png" alt="" />
@@ -138,24 +126,27 @@
       <img src="images/pic4.png" alt="" />
       <img src="images/pic2.png" alt="" />
       <img src="images/pic3.png" alt="" />
-    </section>
+    </div>
 
-    <section class="container">
-
-        <div class="section2">
-          <h2 id="contacts">Контакти</h2>
+ 
+<section class="container">
+   <div class="section2">
+          <h1 id="contacts">КОНТАКТИ</h1>
           <div class="flex-box"> 
             <a href="https://www.instagram.com/"> <img  src="images/insta.png" alt=""></a> 
             <a href="https://t.me/htos_to_tochno_1"> <img  src="images/telegram.png" alt=""></a> 
             <a href="https://www.facebook.com/maria.atamanuk.327991?locale=uk_UA"
               > <img src="images/facebook.png" alt=""> </a>
-
             </div>
+</section>
+     
+  
+       
            
             
           
       
-    </section>
+       
     
   </body>
 </html>

@@ -1,6 +1,6 @@
 html {
   scroll-behavior: smooth;
-  background: rgb(245, 216, 245);
+  background: rgb(255, 227, 255);
 }
 
 * {
@@ -8,20 +8,20 @@ html {
   margin: 0;
   padding: 0;
 }
-.section3 {
-  background-color: rgba(180, 77, 227, 1);
-  height: 20px;
-  margin-bottom: 15px;
+
+body {
+  position: relative;
+  overflow-x: hidden;
 }
 
 body {
+  font-family: "Josefin Sans", sans-serif;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
 }
 
 .menu {
+  z-index: 1000;
   width: 100%;
   background: rgb(23, 14, 32);
   padding: 1vw 2vw;
@@ -40,14 +40,14 @@ body {
 }
 
 .menu-item {
-  color: rgb(245, 216, 245);
+  color: rgb(255, 227, 255);
   font-size: clamp(0.5rem, 2vw, 1.25rem);
   padding: 0.5vw 1vw;
   border-radius: 100px;
   text-decoration: none;
 }
 .menu-item-special {
-  color: rgb(245, 216, 245);
+  color: rgb(255, 227, 255);
 
   padding: 0.5vw 1vw;
   border-radius: 100px;
@@ -56,93 +56,85 @@ body {
 
 .menu-item:hover {
   color: rgb(23, 14, 32);
-  background-color: rgb(245, 216, 245);
+  background-color: rgb(255, 227, 255);
+}
+
+h1 {
+  scroll-margin-top: 6vw;
+  font-size: clamp(2rem, 4vw, 7rem);
+  color: rgba(180, 77, 227, 1);
+  margin-bottom: 2vw;
 }
 
 .header {
-  display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  text-align: center;
-  background: rgb(23, 14, 32);
-  padding: 3vh 6vw;
+  position: relative;
+  display: flex;
   width: 100%;
+  padding: 0;
+  margin-bottom: 5vw;
+  background: rgb(23, 14, 32);
 }
 
-.header img {
-  max-width: 17vw;
-  min-width: 150px;
+.header-img-special {
+  position: absolute;
+  z-index: 2;
+  top: 19%;
+  left: 10%;
+  width: 43%;
   height: auto;
-  margin-bottom: 1.5vh;
 }
 
-.section1 {
-  max-width: 700px;
-}
-
-.section1 h1 {
-  color: rgb(245, 216, 245);
-  font-size: clamp(1.4rem, 2.5vw, 4rem);
-  margin-bottom: 1vh;
-}
-
-.section1 p {
-  color: rgb(245, 216, 245);
-  line-height: 1.4;
+.header-img-main {
+  position: relative;
+  margin-left: auto;
+  width: 35%;
+  height: auto;
 }
 
 .container {
-  background: rgb(245, 216, 245);
-  border-radius: 2vw;
-  width: 67vw;
-  min-width: 64vh;
-  margin: 5vh auto;
+  max-width: 80vw;
+  min-width: 60vh;
+  margin: auto;
   padding: 4vh 4vw;
+}
+
+.section {
+  margin-bottom: 2rem;
+  max-width: 40vw;
 }
 
 .flex-box1 {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  gap: 2vw;
+  align-items: center;
+  gap: 3vw;
   padding: 10px;
-  margin-bottom: 2.5vw;
+  margin-bottom: 8vw;
 }
 
 .flex-box1 img {
-  height: auto;
-  max-width: 14vw;
-  min-width: 12vh;
+  max-height: 20vw;
+  max-width: 30vw;
   border-radius: 3vw;
-}
-
-.section {
-  margin-bottom: 0.5rem;
-}
-
-h2 {
-  scroll-margin-top: 6vw;
-  font-size: clamp(1rem, 2vw, 1.8rem);
-  color: rgba(180, 77, 227, 1);
-  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
-  margin-bottom: 1rem;
 }
 
 ol,
 ul {
-  font-size: clamp(0.8rem, 1.6vw, 1.1rem);
+  font-size: clamp(0.9rem, 1.7vw, 1.3rem);
   line-height: 1.5;
   padding-left: 1.1rem;
 }
 
 p {
-  font-size: clamp(0.8rem, 1.6vw, 1.1rem);
+  font-size: clamp(0.9rem, 1.7vw, 1.3rem);
   color: #000;
   line-height: 1.5;
 }
 
 p a {
-  font-size: clamp(0.8rem, 1.5vw, 1.1rem);
+  font-size: clamp(0.9rem, 1.7vw, 1.3rem);
   text-decoration: none;
   color: rgba(180, 77, 227, 1);
   font-weight: bold;
@@ -156,6 +148,7 @@ p a {
   gap: 25px;
   padding: 30px 10px;
   flex-wrap: wrap;
+  margin-bottom: 3vw;
 }
 
 .flex-box2 img {
@@ -177,11 +170,10 @@ p a {
   justify-content: center;
   align-items: center;
   gap: 8vw;
-  padding: 10px;
+  padding: 3vw;
   margin-bottom: 2.2vw;
 }
 .flex-box img {
-  max-width: 5vw;
-  min-width: 4vh;
-  border-radius: 3vw;
+  max-width: 7vw;
+  border-radius: 100vw;
 }
